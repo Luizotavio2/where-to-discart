@@ -21,8 +21,13 @@ public class MainActivity extends AppCompatActivity {
         spinnerLixo = findViewById(R.id.spinnerLixo);
         btnBuscar = findViewById(R.id.btnBuscar);
 
-        String[] tiposLixo = {"Papel", "Plástico", "Vidro", "Eletrônicos", "Orgânico"};
-
+        String[] tiposLixo = {
+    "♻ Papel", 
+    "♻ Plástico", 
+    "♻ Vidro", 
+    "♻ Eletrônicos", 
+    "♻ Orgânico"
+};
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_spinner_dropdown_item, tiposLixo);
         spinnerLixo.setAdapter(adapter);
